@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "modid",
+  "version": "${version}",
+
+  "name": "Peer to Peer Minecraft",
+  "description": "A Minecraft Mod for drop in peer connections without complicated server and port forwarding setups.",
+  "authors": [
+    "Mvk122"
+  ],
+  "contact": {
+    "email": "madhavkhandhar@gmail.com",
+    "github": "https://github.com/Mvk122"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.fabricmc.p2pmc.P2pHead"
+    ]
+  },
+  "mixins": [
+    "modid.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
